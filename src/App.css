@@ -1,0 +1,54 @@
+
+
+@keyframes bg-div {
+  0% {
+    transform: translate(0, 0) rotate(25deg);
+  }
+  100% {
+    transform: translate(300px, -300px) rotate(25deg);
+  }
+}
+.font-popins{
+  font-family: poppins;
+}
+.bg-green-element {
+  position: absolute;
+  top: -300px;
+  right: -200px;
+  height: 1000px;
+  width: 1000px;
+  animation-name: bg-div;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  will-change: transform;
+  background-image: -webkit-linear-gradient(-30deg, rgb(132, 250, 176) 0%, rgb(143, 211, 244) 100%);
+  border-radius: 100%;
+}
+
+
+.Purpleblob{
+    background-image: -webkit-linear-gradient(90deg, rgb(251, 194, 235) 0%, rgb(166, 193, 238) 100%);
+}
+.hero-signup {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 122, 223),
+    rgb(0, 236, 188),
+    rgb(0, 236, 188),
+    rgb(0, 122, 223)
+  );
+  background-size: 300% 100%;
+  transition: background-position 1s ease-in-out;
+  background-position: left;
+}
+
+.hero-signup:hover {
+  background-position: right;
+}
+
+.t-w{
+  color:white !important;
+}
+

@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer base{
+    html {
+        @apply transition-colors duration-300;
+    }
+    body{
+        @apply bg-white dark:bg-gray-900 text-gray-800 dark:text-white
+    }
+}
+
+/* Custom CSS to hide scrollbar for modal with ID #hide-scrollbar */
+#hide-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+#hide-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+#hide-scrollbar > div:first-child {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+}
+
+#hide-scrollbar > div:first-child::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
+}
